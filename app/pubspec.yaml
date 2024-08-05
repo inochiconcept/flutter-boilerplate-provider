@@ -26,9 +26,20 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^3.0.0
+  flutter_lints: ^4.0.0
 
 flutter:
-
   uses-material-design: true
-
+    - assets/
+    - assets/logo/
+    - assets/images/
+fonts:
+    - family: Barlow
+      fonts:
+        - asset: assets/fonts/BarlowSemiCondensed-Thin.ttf  
+        - asset: assets/fonts/BarlowSemiCondensed-Light.ttf  
+        - asset: assets/fonts/BarlowSemiCondensed-Regular.ttf  
+        - asset: assets/fonts/BarlowSemiCondensed-Medium.ttf  
+        - asset: assets/fonts/BarlowSemiCondensed-SemiBold.ttf  
+        - asset: assets/fonts/BarlowSemiCondensed-Bold.ttf  
+        - asset: assets/fonts/BarlowSemiCondensed-ExtraBold.ttf

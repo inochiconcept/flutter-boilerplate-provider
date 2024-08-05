@@ -1,0 +1,3 @@
+dynamic ar = {
+  "HELLO": "النشاط",
+};
