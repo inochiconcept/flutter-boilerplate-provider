@@ -1,0 +1,3 @@
+dynamic en = {
+  "HELLO": "Hello",
+};

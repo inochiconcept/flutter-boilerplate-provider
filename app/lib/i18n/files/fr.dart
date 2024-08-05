@@ -1,0 +1,3 @@
+dynamic fr = {
+  "HELLO": "Bonjour",
+};
