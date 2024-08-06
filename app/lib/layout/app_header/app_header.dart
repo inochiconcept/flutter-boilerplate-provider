@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 PreferredSize appHeader({
@@ -8,9 +9,12 @@ PreferredSize appHeader({
   return PreferredSize(
     preferredSize: const Size.fromHeight(70),
     child: Builder(builder: (context) {
-      return const Padding(
+      return Padding(
         padding: EdgeInsets.only(
           bottom: 10,
+        ),
+        child: AppBar(
+          title: const Text("GW"),
         ),
       );
     }),

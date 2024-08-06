@@ -10,15 +10,28 @@ class GlobalProvider extends ChangeNotifier {
   factory GlobalProvider() {
     return _instance;
   }
+
+  String testA = "Start";
+  int testB = 0;
+
   Future initGlobalState() async {
     try {
       log("-------init-global-state-----");
 
       log("-------end-global-state-----");
       notifyListeners();
-      return true;
     } catch (e) {
       log('init state error: $e');
     }
+  }
+
+  void changeTestA() {
+    testA = "Changed";
+    notifyListeners();
+  }
+
+  void changeTestB() {
+    testB++;
+    notifyListeners();
   }
 }
