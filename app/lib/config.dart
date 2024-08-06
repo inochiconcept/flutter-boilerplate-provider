@@ -12,6 +12,7 @@ const String apiTkn = "VVEqNmXB2iZaQBA";
 const rootUrl = "https://swapi.dev/";
 const baseUri = "swapi.dev";
 const apiEndpoint = "api/";
+const onesignalKey = "";
 
 const logoRed = 0xFFba0909;
 const logoBlack = 0xFF454545;
