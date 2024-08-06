@@ -45,6 +45,21 @@ class HomePage extends StatelessWidget {
               },
               child: const Text('Change B'),
             ),
+            const SizedBox(height: 30),
+            TextButton(
+              onPressed: () {
+                GlobalProvider().getAllData();
+              },
+              child: const Text('Fetch All Data'),
+            ),
+            Center(child: Text('Count : ${gP.allData?["count"]}')),
+            Column(
+              children: gP.allData?['results'] != null
+                  ? (gP.allData!['results'] as List).map((item) {
+                      return Text('${item["name"]}');
+                    }).toList()
+                  : [],
+            ),
           ],
         ),
       ),

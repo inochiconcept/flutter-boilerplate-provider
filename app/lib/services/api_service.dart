@@ -4,12 +4,11 @@ import 'dart:io';
 import 'package:dio/dio.dart';
 import 'package:app/config.dart';
 
-class FetchDataService {
-  FetchDataService._privateConstructor();
-  static final FetchDataService _instance =
-      FetchDataService._privateConstructor();
+class ApiService {
+  ApiService._privateConstructor();
+  static final ApiService _instance = ApiService._privateConstructor();
 
-  factory FetchDataService() {
+  factory ApiService() {
     return _instance;
   }
   static const tkn = apiTkn;

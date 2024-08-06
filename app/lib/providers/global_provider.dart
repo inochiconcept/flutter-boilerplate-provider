@@ -2,6 +2,7 @@
 
 import 'dart:developer';
 
+import 'package:app/services/api_service.dart';
 import 'package:flutter/widgets.dart';
 
 class GlobalProvider extends ChangeNotifier {
@@ -13,6 +14,7 @@ class GlobalProvider extends ChangeNotifier {
 
   String testA = "Start";
   int testB = 0;
+  dynamic allData;
 
   Future initGlobalState() async {
     try {
@@ -32,6 +34,11 @@ class GlobalProvider extends ChangeNotifier {
 
   void changeTestB() {
     testB++;
+    notifyListeners();
+  }
+
+  Future getAllData() async {
+    allData = await ApiService().fetchDataList();
     notifyListeners();
   }
 }
