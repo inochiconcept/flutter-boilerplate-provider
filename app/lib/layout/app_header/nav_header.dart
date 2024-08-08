@@ -1,16 +1,18 @@
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
 
 PreferredSize navHeader({
   required String title,
-  required bool logo,
   void Function()? actionFct,
 }) {
   return PreferredSize(
     preferredSize: const Size.fromHeight(70),
     child: Builder(builder: (context) {
-      return const Padding(
-        padding: EdgeInsets.only(
+      return Padding(
+        padding: const EdgeInsets.only(
           bottom: 10,
+        ),
+        child: AppBar(
+          title: Text(title),
         ),
       );
     }),

@@ -1,3 +1,4 @@
+import 'package:app/layout/app_header/nav_header.dart';
 import 'package:flutter/material.dart';
 
 class ItemPage extends StatelessWidget {
@@ -7,9 +8,7 @@ class ItemPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(item['name']),
-      ),
+      appBar: navHeader(title: item['name']),
       body: Text(item.toString()),
     );
   }
