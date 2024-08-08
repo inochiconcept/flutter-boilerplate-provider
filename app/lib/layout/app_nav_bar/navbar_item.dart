@@ -1,3 +1,4 @@
+import 'package:app/config.dart';
 import 'package:flutter/material.dart';
 
 class NavBarItem extends StatelessWidget {
@@ -33,7 +34,12 @@ class NavBarItem extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Icon(icon, color: active! ? Colors.red : Colors.green),
+                SizedBox(
+                  height: 30,
+                  child: Icon(icon,
+                      size: 32,
+                      color: active! ? Color(secColor) : Color(mainColor)),
+                ),
                 Text(
                   label!,
                   textAlign: TextAlign.center,

@@ -29,7 +29,7 @@ class FloatingBtn extends StatelessWidget {
           ),
         ),
         Positioned(
-          bottom: -5,
+          top: -5,
           right: -5,
           child: Container(
             width: 25,

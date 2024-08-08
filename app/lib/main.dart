@@ -70,7 +70,7 @@ class MyApp extends StatelessWidget {
             onError: Colors.white,
             background: Colors.white,
             onBackground: Colors.black,
-            surface: Color(colYellow),
+            surface: Colors.white,
             onSurface: Colors.black),
         fontFamily: 'Barlow',
         visualDensity: VisualDensity.adaptivePlatformDensity,
