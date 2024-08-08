@@ -56,7 +56,13 @@ class HomePage extends StatelessWidget {
             Column(
               children: gP.allData?['results'] != null
                   ? (gP.allData!['results'] as List).map((item) {
-                      return Text('${item["name"]}');
+                      return TextButton(
+                        child: Text('${item["name"]}'),
+                        onPressed: () {
+                          Navigator.of(context)
+                              .pushNamed('/item', arguments: item);
+                        },
+                      );
                     }).toList()
                   : [],
             ),
